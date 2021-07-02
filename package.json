@@ -1,0 +1,19 @@
+{
+  "name": "vayner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Lara Samuelson",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}

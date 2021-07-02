@@ -1,0 +1,46 @@
+
+
+
+This exercise was created to assess core competency interacting with API’s, handling encryption/authentication, and using ES6 and Node.js. You will be connecting to a mock API using a bearer/access token, receiving an array of numbers and a secret, performing a basic calculation with those numbers, encrypting them with the secret, and sending the encrypted answer back to the API.
+
+
+
+Before you start, please read the requirements and instructions and email us with an estimate of how long it will take you to complete the assessment.
+
+
+
+Requirements:
+
+
+
+You must use Node.js 10+ and ES6 JavaScript
+A single start command must run your code in its entirety and generate the final API response
+You can use any npm libraries you wish to help accomplish the task below
+
+
+API endpoint: https://backend-evaluation.vcomm.io
+
+Access token: Q5Cm2xxYgCjnMpS8NYbqqPHf2zJ3ukmc
+
+
+
+Instructions:
+
+
+
+Send a GET request to the API endpoint listed above that contains:
+An Authorization header with the token (Authorization: Bearer <token>)
+A query parameter of name with your full first/last name as the value
+You will receive a JSON response that contains:
+An array of 3 numbers
+A secret
+Multiply the first and second numbers together, then add the third number to that.
+Using HMAC-SHA256, encrypt your answer from step 3 with the secret provided in step 2 as a hex digest.
+Send a POST request to the same API endpoint with the body formatted as JSON. The body must contain an object with two properties:
+name: your full first/name
+﻿answer: the hex digest of your answer from step 4 
+If your answer is correct, you will receive a successful response. Congratulations, you’ve completed the assessment! 
+
+
+
+Please paste your response below, and upload your code to GitHub with a link below.
